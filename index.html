@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <script src="https://kit.fontawesome.com/2892cfcd4a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            scroll-behavior: smooth;
+        }
+        body{
+           background:linear-gradient(rgb(5, 216, 243),rgb(232, 73, 86),rgb(217, 0, 255));
+             height: 2200px;
+            width: 900px;  
+        }
+        .list{ float: right;
+           
+            margin-right: 30%;
+            margin-top: 10px;
+             }
+        .list ul li{
+            float: left;
+            padding: 20px;
+            }  
+.list ul li a b {
+        color: rgb(0, 0, 0);
+       }
+          .list   a{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        .logo {
+            width: 10px;
+            position: absolute;
+            left: 5%;
+            top: 10%;
+         }
+        .righticons{
+            float: right;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            display: flex;
+             }
+            .righticon1 {
+                margin: 0px 20px 0px;
+    }
+            .righticon2{
+                margin: 0px 20px 0px;
+            }
+              .righticon3{
+                margin: 0px 20px 0px;
+              }
+              .name  h1{
+                position: absolute;
+                left: 35%;
+                top: 15%;
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                font-size: 60px;
+              }
+              .name span{
+                color: rgb(255, 1, 1);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               }
+              .name p{
+                position: absolute;
+                left: 45%;
+                top: 35%;
+               text-align: center;
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+               font-size: 35px;
+            }
+         button{
+            position: absolute;
+            left: 53%;
+            top: 65%;
+            padding:25px 80px 25px;
+            border-radius: 30px;
+            outline: 0px;
+            border: 0px;
+            background-color: rgb(255, 234, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+             }
+         button a ,b{ 
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+             }
+        button:hover{
+            transform: scale(1.2) translateY(10px);
+                transition: 0.4s;
+         }
+         .corner{
+            float: right;
+            position: absolute;
+            right: 5px;
+            top: 45%;
+             }
+         .follow{ transform: rotate(270deg);
+            position: absolute;
+            top: 35%;
+            right: 0px;
+            margin: 0px;
+            padding: 0px;
+         }
+         .twitter{
+             margin-bottom: 20px;
+            margin-right: 20px;
+         }
+         .facebook{
+            margin-bottom: 20px;
+            margin-right: 20px;
+         }
+         .instagram{
+            margin-bottom: 20px;
+            margin-right: 20px;
+         }
+         .nextpage b{
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               position: absolute;
+          bottom: 0px;
+            right: 25%;
+            top: 600px; }
+        .nextpage  b span{
+            color: rgb(255, 1, 1);
+        }
+        .image1{
+            background-color: rgb(255, 255, 255);
+            height: 350px;
+            width: 300px;
+            float: left;
+            border-radius: 5px;
+            margin-left: 44px;
+           padding: 10px;
+           position: absolute;
+            bottom: 0px;
+            left: 0px;
+            top: 700px;
+ }
+        .image1 h2 { 
+            position: absolute;
+           left: 25%;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+           .image1 i{
+            background-color: rgb(239, 233, 233);
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            font-size: 20px;
+            padding: 5px 7px;
+            border-radius: 5px;
+        }
+         .image2{
+            background-color:white;
+            height: 350px;
+            width: 300px;
+            border-radius: 5px;
+             margin-left: px;
+           padding: 10px;
+           position: absolute;
+            bottom: 0px;
+            left: 37%;
+            top: 700px;
+        }
+        .image2 h2 { 
+            position: absolute;
+           left: 25%;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+        .image2 i{
+            background-color: rgb(239, 233, 233);
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            font-size: 20px;
+            padding: 5px 7px;
+            border-radius: 5px;
+        }
+        .image3{
+            background-color: white;
+            height: 350px;
+            width: 300px;
+            border-radius: 5px;
+             margin-left: px;
+           padding: 10px;
+           position: absolute;
+            bottom: 0px;
+            left: 70%;
+            top: 700px;
+        }
+        .image3 h2 { 
+            position: absolute;
+           left: 25%;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+        .image3 i{
+            background-color: rgb(239, 233, 233);
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            font-size: 20px;
+            padding: 5px 7px;
+            border-radius: 5px;
+        }
+        .qualityfont{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         position: absolute;
+         top: 1150px;
+         left:25%;
+         font-size: 25px;
+        }
+         .image4  img{
+          position: absolute;
+          top: 1230px;
+          left: 10%;
+         width: 150px;
+          
+        }
+        .image4 h1 {
+            position: absolute;
+          top: 1370px;
+          left: 12%;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .image4 p{
+            position: absolute;
+          top: 1400px;
+          left: 3%;
+          width: 300px;
+          padding: 25px;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .image5 img{
+          position: absolute;
+          top: 1230px;
+          left: 45%;
+         width: 150px;
+          }
+        .image5 h1 {
+            position: absolute;
+          top: 1370px;
+          left: 46%;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+        .image5 p{
+            position: absolute;
+          top: 1400px;
+          left: 37%;
+          width: 300px;
+          padding: 25px;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .image6 img{
+          position: absolute;
+          top: 1230px;
+          left: 78%;
+         width: 150px;
+           }
+        .image6 h1 {
+            position: absolute;
+          top: 1370px;
+          left: 80%;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .image6 p{
+            position: absolute;
+          top: 1400px;
+          left: 70%;
+          width: 300px;
+          padding: 25px;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+             .tab{
+                background-color: aqua;
+                width: 900px;
+                height:200px;
+               padding-top: 50px;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               position: absolute;
+                top: 1600px;
+               left: 13%;
+                text-align: center;
+                border-radius:10px ;
+             }   
+            .tab a{
+                text-decoration:none;
+               background-color: rgb(255, 140, 0);
+               text-align: center;
+                padding: 10px;
+               color:black;
+               font-size: 25px;
+               position: absolute;
+               top: 120px;
+               left: 44%;
+            border-radius: 20px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+             .tab a:hover{
+                transform: scale(1.2) translateY(10px);
+                transition: 0.4s;
+             }
+             .lastpart{
+                display: flex;
+                flex-wrap: wrap;
+                position: absolute;
+                top: 1900px;
+                padding: 20px;
+                margin-top: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }    
+             .lastpart h4{
+             justify-content: center;
+            margin-bottom: 10px;
+            transform: translate(25px);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;            
+           }
+           .lastpart1{
+             margin-left: 135px;
+                margin-right:100px;
+               margin-bottom: 10px;
+             }
+            .lastpart1 ul li { 
+                padding: 10px;
+         }
+             .lastpart2{
+                margin-right:100px;
+                margin-bottom:10px;
+            }
+            .lastpart2 ul li { 
+                padding: 10px;
+        }
+             .lastpart3{
+                margin-right:100px;
+             }
+             .lastpart3 ul li { 
+                padding: 10px;
+        }
+             .lastpart4{
+                margin-right:100px;
+             }
+             .lastpart4 ul li { 
+                padding: 10px;
+             }
+            .lastpart1 ul li { 
+                padding: 10px;                     
+            }
+     .lastpart ul li a{
+            margin: 20px;
+            text-decoration: none;
+            color: black;
+           }
+           </style>
+</head>
+<body>
+    <div class="box">
+        <div class="logo">
+             <i class="fa-solid fa-burger fa-7x"><small><h6>25% off HURRY UP NOW!!!!</small></h6> </i>
+ </div>
+    <div class="list">
+        <ul type="none">
+            <li name="Home"><a href="#"><b> HOME</b></a></li>
+            <li name="Menu"><a href="#"> <b>MENU</b></a></li>
+            <li name="About"> <a href="#"><b>ABOUT</b></a></li>
+            <li name="Book"> <a href="#"><b>BOOK TABLE</b></a></li>
+        </ul></div>
+        <div class="righticons">
+        <div class="righticon1">
+            <i class="fa-solid fa-user"></i>
+        <a href="#"></a></div>
+            <div class="righticon2">
+            <i class="fa-solid fa-cart-shopping "></i>
+            <a href="#"></a>
+            </div>
+            <div class="righticon3">
+             <i class="fa-solid fa-magnifying-glass "></i>
+            <a href="#"></a>
+            </div>
+        </div>
+        <div class="name">
+              <h1>
+                    <span>
+                Instant</span> Food Restaurant</h1>
+                <p>
+                    <b>
+                    Opening Hours<br>
+                    Monday-Friday:10AM-6PM<br>
+                    Weekends: 8AM-10PM
+                </b>
+                </p>
+            </div>
+            <div class="button">
+                 <button>
+                    <a href="#">
+                    <b>
+                    Order Now
+                    </b>
+                    </a>
+                </button>
+            </div>
+            <div class="corner">
+                 <div class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                     </div>
+                <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                     </div>
+                <div class="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="follow">
+            follow Us...
+            </div>
+               <div class="nextpage">
+            <div><b>
+             <span>Our Special</span> Varieties Of Burgers </b> 
+            </div>
+        <div class="image1">
+            <img src="food1.png">
+          <h2>  Special Burger</h2>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="image2">
+            <img src="food2.png">
+          <h2> Chicken Burger</h2>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="image3">
+            <img src="food3.png">
+          <h2> Chicken Fry Pack</h2>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+      </div>
+    <div class="quality">
+        <div class="qualityfont">
+        <h1>
+            We provide best quality of food
+        </h1>
+        </div>
+        <div class="secondpage">
+        <div class="image4">
+            <img src="s1.png">
+            <h1>
+                Order
+            </h1>
+            <p>
+                There are many variations of passengers Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat dolorem, sunt corrupti voluptates ipsa iusto odio, suscipit ut non odit consequatur id! Itaque iure maiores aperiam unde nam dignissimos.
+            </p>
+        </div>
+    </div>
+     <div class="image5">
+            <img src="s2.png">
+            <h1>
+                Shipping
+            </h1>
+            <p>
+                There are many variations of passengers Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat dolorem, sunt corrupti voluptates ipsa iusto odio, suscipit ut non odit consequatur id! Itaque iure maiores aperiam unde nam dignissimos.
+            </p>
+        </div>
+        <div class="image6">
+            <img src="s3.png">
+            <h1>
+                Delivery
+            </h1>
+            <p>
+                There are many variations of passengers Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat dolorem, sunt corrupti voluptates ipsa iusto odio, suscipit ut non odit consequatur id! Itaque iure maiores aperiam unde nam dignissimos.
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="thirdpage">
+        <div class="tab">
+         <h1> We make quality food 
+            Everyday</h1>
+            <a href="#" class="button"> Let's Talk</a>
+</div>
+     </div>
+    <div class="footer">
+        <div class="lastpart">
+            <div class="lastpart1">
+            <h4> Menu Links</h4>  
+         <ul type="none">
+            <li name="Home"> <a href="#">Home </a></li>
+            <li name="About"> <a href="#">About</a></li>
+            <li name="Menu"> <a href="#"> Menu</a></li>
+            <li name="Services"> <a href="#"> Services</a></li>
+            <li name="Contact"> <a href="#">Contact</a></li>
+         </ul>
+          </div>
+          <div class="lastpart2">
+            <h4> Our Services</h4>  
+         <ul type="none">
+            <li> <a href="#">Web Design </a></li>
+            <li> <a href="#">Web Develpoment</a></li>
+            <li> <a href="#"> Marketing</a></li>
+            <li> <a href="#"> Product Manager</a></li>
+            <li> <a href="#"> Graphic Design</a></li>
+         </ul>
+          </div>
+          <div class="lastpart3">
+            <h4> Information </h4>  
+         <ul type="none">
+            
+            <li> <a href="#">About Us</a></li>
+            <li> <a href="#">Delivery Information</a></li>
+            <li> <a href="#"> Privacy Policy</a></li>
+            <li> <a href="#">Terms and Condition</a></li>
+         </ul>
+          </div>
+          <div class="lastpart4">
+            <h4> Contact </h4>  
+         <ul type="none">
+            <li> <a href="#"> <i class="fa-brands fa-facebook-f"></i></a></li>
+            <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+         </ul>
+          </div>
+
+        </div>
+    </div>
+</body>
+</html>
